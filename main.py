@@ -6,7 +6,6 @@ from responses import get_response
 #Loading token
 load_dotenv()
 TOKEN: str = os.getenv('DISCORD_TOKEN')
-print(TOKEN)
 
  #Setup intents
 

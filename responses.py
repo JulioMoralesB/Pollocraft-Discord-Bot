@@ -1,8 +1,13 @@
+import os
+from dotenv import load_dotenv
 from mcstatus import JavaServer
+
+load_dotenv()
+SERVER_IP: str = os.getenv('SERVER_IP')
 
 def get_response(user_input: str) -> str:
     message: str = user_input.lower().replace(" ","")
-    server = JavaServer.lookup('minecraft.apollox10.com')
+    server = JavaServer.lookup(SERVER_IP)
 
     is_server_online = False
 
@@ -18,15 +23,15 @@ def get_response(user_input: str) -> str:
         if is_server_online:
             return f'''
                 \t- Estado: Online
-                \n- IP: minecraft.apollox10.com
+                \n- IP: {SERVER_IP}
                 \n- Versión: {str(status.version.name)}
                 \n- Número de jugadores actuales: {status.players.online}
                 \n- Lista de jugadores actuales: \n\t- {current_players}
                 '''
         else:
-            return '''
+            return f'''
                     \t- Estado: Offline
-                    \n- IP: minecraft.apollox10.com
+                    \n- IP: {SERVER_IP}
                     \n- Versión: 1.20.4
                     '''
 
@@ -51,7 +56,7 @@ def get_response(user_input: str) -> str:
         return 'Actualmente están jugando: \n\t- ' + current_players if is_server_online else 'El servidor esta offline, así que no deberían haber jugadores, en teoría...'
     
     if message == 'ip':
-        return 'minecraft.apollox10.com'
+        return SERVER_IP
     
     if message == 'version':
         return str(status.version.name) if is_server_online else "La versión debería ser 1.20.4, pero el servidor está actualmente desconectado. Esta info podría no estar actualizada."
