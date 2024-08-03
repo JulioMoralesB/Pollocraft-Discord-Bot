@@ -65,5 +65,11 @@ def get_response(user_input: str) -> str:
                 \n- "?ip": Devuelve la IP del servidor.
                 \n- "?version": Devuelve la versión actual del servidor.
                 '''
+    
+    if message == 'ping':
+        if is_server_online:
+            return server.ping()
+        else:
+            return 'Server is currently offline.'
     else:
         return 'null'

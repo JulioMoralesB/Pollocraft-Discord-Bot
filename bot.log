@@ -1,0 +1,99 @@
+[2024-08-03 16:19:24,248] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 16:19:24,250] [INFO]: logging in using static token
+[2024-08-03 16:19:25,173] [INFO]: Shard ID None has connected to Gateway (Session ID: 713f8122ab405e8dd0c0ce3aa3e1ed32).
+[2024-08-03 16:21:11,470] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 16:21:11,472] [INFO]: logging in using static token
+[2024-08-03 16:21:12,306] [INFO]: Shard ID None has connected to Gateway (Session ID: cab5e5d5d21dac56808bb5f6ecb8b7a7).
+[2024-08-03 16:37:43,230] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 16:37:43,231] [INFO]: logging in using static token
+[2024-08-03 16:37:44,085] [INFO]: Shard ID None has connected to Gateway (Session ID: 95d29e15dc2bdb67ea142a3743a751b0).
+[2024-08-03 16:37:51,333] [ERROR]: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\venv\lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\main.py", line 69, in on_message
+    channel: str = message.channel.name.lower()
+AttributeError: 'DMChannel' object has no attribute 'name'
+[2024-08-03 16:43:35,368] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 16:43:35,370] [INFO]: logging in using static token
+[2024-08-03 16:43:36,082] [INFO]: Shard ID None has connected to Gateway (Session ID: 47245bb08459ee4d96a3d3cdaf025710).
+[2024-08-03 16:44:09,773] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 16:44:09,774] [INFO]: logging in using static token
+[2024-08-03 16:44:10,690] [INFO]: Shard ID None has connected to Gateway (Session ID: 77aa105d6f20e8d5598551e0ca1e3121).
+[2024-08-03 16:54:34,882] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 16:54:34,884] [INFO]: logging in using static token
+[2024-08-03 16:54:36,089] [INFO]: Shard ID None has connected to Gateway (Session ID: 34e3ec700bde8a31a309b475ecd6db07).
+[2024-08-03 17:04:01,046] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:04:01,047] [INFO]: logging in using static token
+[2024-08-03 17:04:01,800] [INFO]: Shard ID None has connected to Gateway (Session ID: 676add5e64d9155d897079711832c730).
+[2024-08-03 17:05:24,363] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:05:24,365] [INFO]: logging in using static token
+[2024-08-03 17:05:25,225] [INFO]: Shard ID None has connected to Gateway (Session ID: 54a1a855dd108209fe46185ebb00e8b0).
+[2024-08-03 17:05:46,839] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:05:46,840] [INFO]: logging in using static token
+[2024-08-03 17:05:47,590] [INFO]: Shard ID None has connected to Gateway (Session ID: fe278b1b828d5802f35ac35cd5328c65).
+[2024-08-03 17:28:40,408] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:28:40,410] [INFO]: logging in using static token
+[2024-08-03 17:28:41,231] [INFO]: Shard ID None has connected to Gateway (Session ID: b0115a28564a42878244165e78080b6a).
+[2024-08-03 17:36:54,827] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:36:54,829] [INFO]: logging in using static token
+[2024-08-03 17:36:55,577] [INFO]: Shard ID None has connected to Gateway (Session ID: 91a68fdaf042682be840a55e313b237c).
+[2024-08-03 17:38:49,889] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:38:49,892] [INFO]: logging in using static token
+[2024-08-03 17:38:50,772] [INFO]: Shard ID None has connected to Gateway (Session ID: 96af8130c3197764326ee196b5f623ef).
+[2024-08-03 17:39:19,342] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:39:19,344] [INFO]: logging in using static token
+[2024-08-03 17:39:20,099] [INFO]: Shard ID None has connected to Gateway (Session ID: a143ba7c51f92d386694d8b86d270a3f).
+[2024-08-03 17:39:55,569] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:39:55,571] [INFO]: logging in using static token
+[2024-08-03 17:39:56,451] [INFO]: Shard ID None has connected to Gateway (Session ID: edbfc775a69631ed0fd5f8eb6c747927).
+[2024-08-03 17:40:47,584] [WARNING]: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\main.py", line 105, in <module>
+    main()
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\main.py", line 102, in main
+    client.run(token=TOKEN)
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\venv\lib\site-packages\discord\client.py", line 860, in run
+    asyncio.run(runner())
+  File "C:\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+  File "C:\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\venv\lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\main.py", line 88, in on_message
+    await debug_message(message, user_message[1:])
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\main.py", line 70, in debug_message
+    time.sleep(RETRY_DELAY)
+
+[2024-08-03 17:40:52,468] [ERROR]: Attempting a reconnect in 0.11s
+Traceback (most recent call last):
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\venv\lib\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "H:\Users\julio\Documents\Coding projects\DiscordBot\venv\lib\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+[2024-08-03 17:40:52,853] [INFO]: Shard ID None has successfully RESUMED session edbfc775a69631ed0fd5f8eb6c747927.
+[2024-08-03 17:41:38,659] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:41:38,660] [INFO]: logging in using static token
+[2024-08-03 17:41:39,569] [INFO]: Shard ID None has connected to Gateway (Session ID: d9e7db7e8e734a7d79b1a6dc7eba1db8).
+[2024-08-03 17:42:56,523] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:42:56,525] [INFO]: logging in using static token
+[2024-08-03 17:42:57,274] [INFO]: Shard ID None has connected to Gateway (Session ID: f66169a93112c5d0433bcb17d02626ed).
+[2024-08-03 17:44:01,556] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:44:01,557] [INFO]: logging in using static token
+[2024-08-03 17:44:03,861] [INFO]: Shard ID None has connected to Gateway (Session ID: 7d46b23fa1b0848681cbfc7ca4325240).
+[2024-08-03 17:45:36,824] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:45:36,825] [INFO]: logging in using static token
+[2024-08-03 17:45:37,626] [INFO]: Shard ID None has connected to Gateway (Session ID: e5128f86195dbd4dfb0afaf67b35dd63).
+[2024-08-03 17:47:36,212] [WARNING]: PyNaCl is not installed, voice will NOT be supported
+[2024-08-03 17:47:36,213] [INFO]: logging in using static token
+[2024-08-03 17:47:36,999] [INFO]: Shard ID None has connected to Gateway (Session ID: b6dd74546f17e4f0cdd16efd5b9e50c8).
